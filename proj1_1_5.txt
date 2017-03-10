@@ -1,0 +1,8 @@
+The goal of these pieces of code was to get a better understanding of
+the interface between sql and R. However, after learning how to connect
+R to the database and the added difficulty sql made to the process
+I decided to not follow expanding into adding sql queries into the 
+main project. From proj1_1_5b I also had the experience again of not being
+able to manipulate the RejectTestA.csv file to the extent I would like.
+my goal with proj1_2 is to make my code more streamlined so I can easily
+use this file without breaking it down into so many segments
