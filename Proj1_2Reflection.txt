@@ -1,0 +1,23 @@
+To cite my goals, I initially started with the objective of replacing a lot of
+my commands in proj1_1 with sql functions to access data directly from the database.
+While im still not opposed to this I believed that the sql package would
+be an additional tool for R to clean data, and I found that the manipulation
+it provided with sqlite was not up to the level I was looking for I sacked the
+plan.
+
+In lieu of updating my coding to include a nicer database manipulations I
+proceeded instead to work on my coding efficeny which I believe was 
+a huge success. In proj1_1 I had to take a random sample of 10k observations
+since my computer physically couldnt process the data as I was hoping it would.
+By doing research and getting access to the data.table, parallel, foreach,
+doparallel, and learning how to use the apply family of functions to a 
+much better degree. I managed to not only be able to process all my data
+but I was able to do it faster than the 10k observation methods I used which
+would require a seventy fold increase in speed. and additionally I was able to
+begin testing new ggplot mapping, and managed to create my first heatmap.
+Which allows me to conclude over all proj1_2 was a huge success.
+
+To conclude this, I want to make a starting summary of my goals for project1_3.
+My code is beginning to get a bit sloppy. not efficency wise but general
+readablility. I am going to begin splititng the projects into subsegments
+so one can be used strictly for cleaning while the other can reference that data.
