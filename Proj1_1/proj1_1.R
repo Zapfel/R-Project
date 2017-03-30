@@ -12,16 +12,23 @@ set.seed(123)
 #Code objective, compare the data sets LoanStats and RejectStats
 #Look for any interesting comparisons that can be made
 
+setwd("~/data science")
 LoanStats = read.csv("LoanStats3a.csv", header=FALSE, stringsAsFactors=FALSE)
 RejectStats = read.csv("RejectStatsA.csv",header=FALSE, stringsAsFactors=FALSE)
+
+write.csv()
 
 #Examining the Loan Stats dataset to get an understanding of each variable
 names(LoanStats)
 headLoanStats <- LoanStats[2,]
 headLoanStats2 <- LoanStats[2,]
+LoanWrite <- write.csv(LoanStats[2:42540,c(1:18,21:50)],file = 'LoanStats.csv', quote = TRUE, 
+                       sep = ',', eol = '\n', na = 'NA', dec = '.', row.names = FALSE,
+                       col.names = LoanStats[2,1:50], qmethod = c("escape", "double"))
 i = 1
 for (i in 1:50)
 {
+  print(i)
   print(headLoanStats2 <- LoanStats[2,i])
   print(headLoanStats2 <- LoanStats[3,i])
   print(headLoanStats2 <- LoanStats[4,i])
@@ -48,7 +55,7 @@ LoanStatsNew <- LoanStats[1:42540,1:18]
 
 #Examining the Reject Stats Dataset to get an understanding of each variable
 i = 1
-for (i in 1:9)
+for (i in 1:8)
 {
   print(RejectStats[2,i])
   print(RejectStats[3,i])
@@ -66,6 +73,22 @@ for (i in 1:500)
   print(RejectStats[i,3])
   
 }
+
+RejectStats = read.csv("RejectStatsA.csv",header=FALSE, stringsAsFactors=FALSE)
+
+
+RejectStats11 <- RejectStats[1:250000,1:3]
+
+
+N3 = 42540
+RejectTest1 <- RejectStats[2:100,]
+RejectTest2 <- RejectStats[,7]
+RejectTest3 <- sample_n(RejectStats,N3,replace = FALSE)
+
+RejectTest3 <- write.csv(RejectTest3,file = 'RejectTest3.csv', quote = TRUE, 
+                       sep = ',', eol = '\n', na = 'NA', dec = '.', row.names = FALSE,
+                       col.names = LoanStats[2,1:50], qmethod = c("escape", "double"))
+
 
 
 #We can see two interesting things to compare from these data sets

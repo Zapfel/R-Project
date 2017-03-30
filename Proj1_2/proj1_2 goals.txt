@@ -1,0 +1,7 @@
+The initial commit was for testing my understanding of data cleaning and manipulation with R along with some basic
+Visualization.
+
+
+My goals for proj1_2 is to add sqlite support and to replace some of the code I currently have
+with some of the commands from the rsql packages. this will allow  the .csv files can be moved to sql
+for better data management and manipulation within R.
