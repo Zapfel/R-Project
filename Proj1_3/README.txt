@@ -1,5 +1,5 @@
 Proj1_3
-Goal of this was to seperate into seperate steps so it was 
+Goal of this was to separate into separate steps so it was 
 easier to understand my coding. and continue creating 
 
 Packages used
