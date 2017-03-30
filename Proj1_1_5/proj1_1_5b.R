@@ -33,7 +33,7 @@ LoanStats <- LoanStats[,c(1:18,21:50)]
 #This data can be properly read into our sql files.
 #The problem with our database code is when it reads in the ','
 #character it views it without an escape key so it splits data into
-#two seperate columns causing it to not be able to read into our 
+#two separate columns causing it to not be able to read into our 
 #database. The above loop fixes this by removing all commas.
 
 LoanWrite <- write.csv(LoanStats[2:42540,],file = 'LoanStats.csv', quote = TRUE, 
